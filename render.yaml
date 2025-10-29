@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tradeindia-proxy
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.12.1
+      - key: PORT
+        value: 3000
